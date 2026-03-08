@@ -42,32 +42,42 @@ python agent.py
 ## Project Structure
 
 ```text
-New project/
+autonomous_repo_engineer/
   autonomous_repo_engineer/
+    __init__.py
+    main.py
     agents/
+      __init__.py
       repo_reader.py
       code_analyzer.py
       fix_generator.py
       task_generator.py
       implementation_agent.py
     tools/
+      __init__.py
       git_tools.py
       file_tools.py
       analysis_tools.py
       backlog_tools.py
       logger.py
     api/
+      __init__.py
       schemas.py
-    main.py
   backlog/
     tasks.json
-  tests/
   examples/
+    example_usage.py
+  tests/
+    conftest.py
+    test_api.py
+    test_code_analyzer.py
+    test_task_generator.py
   agent.py
   run_server.py
   requirements.txt
   pyproject.toml
   setup.py
+  README.md
 ```
 
 ## Task Format
@@ -207,5 +217,3 @@ python -m pytest -q
 - `ImplementationAgent` is currently a pluggable baseline executor. It can be replaced with a real code-modifying implementation without changing `agent.py` flow.
 - Backlog is persisted in `backlog/tasks.json`.
 - If clone fails in API mode, endpoint returns HTTP 400 with error details.
-
-
