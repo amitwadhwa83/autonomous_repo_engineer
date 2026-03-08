@@ -5,6 +5,24 @@ Autonomous GitHub Repo Engineer Agent analyzes Python repositories and helps imp
 1. API analysis mode (`/analyze_repo`) for on-demand repository inspection.
 2. Autonomous CLI mode (`agent.py`) for self-generated backlog tasks and task execution.
 
+## Quick Start (2 Minutes)
+
+```powershell
+cd <project-root>
+python -m pip install -r requirements.txt
+python -m pip install -e .
+python run_server.py
+```
+
+Then open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) and call `POST /analyze_repo`.
+
+For autonomous backlog mode (separate terminal):
+
+```powershell
+cd <project-root>
+python agent.py scan_repo
+python agent.py
+```
 ## What It Does
 
 - Accepts a GitHub repository URL
@@ -82,7 +100,7 @@ Generated tasks are stored in `backlog/tasks.json` with this structure:
 Run from project root:
 
 ```powershell
-cd "C:\Users\amit\OneDrive\Documents\New project"
+cd <project-root>
 python -m pip install -r requirements.txt
 python -m pip install -e .
 ```
@@ -90,7 +108,7 @@ python -m pip install -e .
 ## Run API Server
 
 ```powershell
-cd "C:\Users\amit\OneDrive\Documents\New project"
+cd <project-root>
 python run_server.py
 ```
 
@@ -180,7 +198,7 @@ Logs include:
 ## Run Tests
 
 ```powershell
-cd "C:\Users\amit\OneDrive\Documents\New project"
+cd <project-root>
 python -m pytest -q
 ```
 
@@ -189,3 +207,5 @@ python -m pytest -q
 - `ImplementationAgent` is currently a pluggable baseline executor. It can be replaced with a real code-modifying implementation without changing `agent.py` flow.
 - Backlog is persisted in `backlog/tasks.json`.
 - If clone fails in API mode, endpoint returns HTTP 400 with error details.
+
+
