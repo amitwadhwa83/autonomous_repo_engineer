@@ -1,0 +1,389 @@
+[
+  {
+    "task_id": "TASK-0002",
+    "task_type": "refactor",
+    "description": "Remove unused imports in agent.py: annotations",
+    "target_files": [
+      "agent.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0003",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\agents\\code_analyzer.py for: CodeAnalyzer, __init__, analyze_files",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\code_analyzer.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0004",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\agents\\fix_generator.py for: FixGenerator, __init__, generate",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\fix_generator.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0005",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\agents\\implementation_agent.py for: ImplementationAgent",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\implementation_agent.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0006",
+    "task_type": "refactor",
+    "description": "Remove unused imports in autonomous_repo_engineer\\agents\\implementation_agent.py: annotations",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\implementation_agent.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0007",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\agents\\repo_reader.py for: RepoData, RepoReader, __init__, load_repository",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\repo_reader.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0008",
+    "task_type": "refactor",
+    "description": "Refactor long functions in autonomous_repo_engineer\\agents\\task_generator.py: scan_repository (103 lines)",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\task_generator.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0009",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\agents\\task_generator.py for: TaskGenerator, __init__, scan_repository, findings_to_tasks, _python_files, _find_long_functions, _missing_docstrings, _unused_imports, _complex_functions, _count_control_nodes, _max_nested_depth, _duplicate_blocks, _files_without_tests, walk",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\task_generator.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0010",
+    "task_type": "refactor",
+    "description": "Remove unused imports in autonomous_repo_engineer\\agents\\task_generator.py: annotations",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\task_generator.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0011",
+    "task_type": "optimization",
+    "description": "Reduce control-flow complexity in autonomous_repo_engineer\\agents\\task_generator.py: _unused_imports (controls=7, depth=5)",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\task_generator.py"
+    ],
+    "priority": 5
+  },
+  {
+    "task_id": "TASK-0012",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\api\\schemas.py for: AnalyzeRepoRequest, AnalyzeRepoResponse",
+    "target_files": [
+      "autonomous_repo_engineer\\api\\schemas.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0013",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\main.py for: root, analyze_repo",
+    "target_files": [
+      "autonomous_repo_engineer\\main.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0014",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\tools\\analysis_tools.py for: find_unused_imports, find_missing_docstrings, find_long_functions, find_duplicate_blocks",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\analysis_tools.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0015",
+    "task_type": "optimization",
+    "description": "Reduce control-flow complexity in autonomous_repo_engineer\\tools\\analysis_tools.py: find_unused_imports (controls=7, depth=5)",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\analysis_tools.py"
+    ],
+    "priority": 5
+  },
+  {
+    "task_id": "TASK-0016",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\tools\\backlog_tools.py for: ensure_backlog, load_tasks, save_tasks, pop_next_task, append_tasks",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\backlog_tools.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0017",
+    "task_type": "refactor",
+    "description": "Remove unused imports in autonomous_repo_engineer\\tools\\backlog_tools.py: annotations",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\backlog_tools.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0018",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\tools\\file_tools.py for: list_all_files, python_files, summarize_architecture",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\file_tools.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0019",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\tools\\git_tools.py for: GitCloneError, clone_repository",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\git_tools.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0020",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in autonomous_repo_engineer\\tools\\logger.py for: configure_logging",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\logger.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0021",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in examples\\example_usage.py for: module",
+    "target_files": [
+      "examples\\example_usage.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0022",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in setup.py for: module",
+    "target_files": [
+      "setup.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0023",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in tests\\conftest.py for: module",
+    "target_files": [
+      "tests\\conftest.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0024",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in tests\\test_api.py for: module, test_analyze_repo_endpoint, fake_load_repository",
+    "target_files": [
+      "tests\\test_api.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0025",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in tests\\test_code_analyzer.py for: module, test_code_analyzer_detects_expected_issues",
+    "target_files": [
+      "tests\\test_code_analyzer.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0026",
+    "task_type": "documentation",
+    "description": "Add missing docstrings in tests\\test_task_generator.py for: module, test_task_generator_creates_tasks",
+    "target_files": [
+      "tests\\test_task_generator.py"
+    ],
+    "priority": 3
+  },
+  {
+    "task_id": "TASK-0027",
+    "task_type": "testing",
+    "description": "Add unit tests for agent.py.",
+    "target_files": [
+      "agent.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0028",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\__init__.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\__init__.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0029",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\agents\\__init__.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\__init__.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0030",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\agents\\fix_generator.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\fix_generator.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0031",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\agents\\implementation_agent.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\implementation_agent.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0032",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\agents\\repo_reader.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\agents\\repo_reader.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0033",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\api\\__init__.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\api\\__init__.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0034",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\api\\schemas.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\api\\schemas.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0035",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\main.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\main.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0036",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\tools\\__init__.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\__init__.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0037",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\tools\\analysis_tools.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\analysis_tools.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0038",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\tools\\backlog_tools.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\backlog_tools.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0039",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\tools\\file_tools.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\file_tools.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0040",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\tools\\git_tools.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\git_tools.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0041",
+    "task_type": "testing",
+    "description": "Add unit tests for autonomous_repo_engineer\\tools\\logger.py.",
+    "target_files": [
+      "autonomous_repo_engineer\\tools\\logger.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0042",
+    "task_type": "testing",
+    "description": "Add unit tests for examples\\example_usage.py.",
+    "target_files": [
+      "examples\\example_usage.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0043",
+    "task_type": "testing",
+    "description": "Add unit tests for run_server.py.",
+    "target_files": [
+      "run_server.py"
+    ],
+    "priority": 4
+  },
+  {
+    "task_id": "TASK-0044",
+    "task_type": "testing",
+    "description": "Add unit tests for setup.py.",
+    "target_files": [
+      "setup.py"
+    ],
+    "priority": 4
+  }
+]

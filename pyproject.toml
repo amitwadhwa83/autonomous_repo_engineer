@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "autonomous_repo_engineer"
 version = "0.1.0"
 description = "Autonomous GitHub repository analysis and fix generation agent"
+readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
     "fastapi>=0.100.0",
@@ -20,11 +21,10 @@ dev = [
 ]
 
 [tool.setuptools]
-packages = [
-    "agents",
-    "api",
-    "tools",
-]
+packages = ["autonomous_repo_engineer"]
 
 [tool.setuptools.package-data]
+autonomous_repo_engineer = []
 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
